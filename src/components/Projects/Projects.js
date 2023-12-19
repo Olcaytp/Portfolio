@@ -2,12 +2,17 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import final from "../../Assets/Projects/final.png";
+import todo from "../../Assets/Projects/todo.png";
+import quiz from "../../Assets/Projects/quiz.png";
+import movie from "../../Assets/Projects/movie.png";
+import project from "../../Assets/Projects/project-happy-thoughts-vite-technigo-week6.png";
+import Survey from "../../Assets/Projects/Project-Survey-Vite-Technigo-Week5.png";
+import Music from "../../Assets/Projects/PairProject-Music-Releases-Technigo-Week4.png";
+import weather from "../../Assets/Projects/weather.png";
+import ASPNet from "../../Assets/Projects/ASPNet-crud.jpg";
+import Apartment from "../../Assets/Projects/Apartment-Management-System.png";
+import Recipe from "../../Assets/Projects/Recipe-Book.png";
 
 function Projects() {
   return (
@@ -23,68 +28,122 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={final}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Expence Tracker React App"
+              description="Users can easily log their expenses, categorize transactions, and gain valuable insights into their spending patterns, making ExpensifyTracker an essential tool for personal financial management."
+              ghLink="https://github.com/Olcaytp/technigo-final-project"
+              demoLink="https://technigo-final-week-project.netlify.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={todo}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Todo App"
+              description="With the power of React components and state management, users can efficiently create, update, and mark tasks as completed, making it an essential tool for anyone seeking an efficient and user-friendly task management solution."
+              ghLink="https://github.com/Olcaytp/technigo-week9-project-todos-redux"
+              demoLink="https://technigo-project-redux.netlify.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={quiz}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Quiz App"
+              description="QuizzyReact is an engaging and interactive web application developed using React, aimed at providing users with an enjoyable quiz-taking experience. This app is designed to be both user-friendly and visually appealing, offering a wide range of quizzes on diverse topics."
+              ghLink="https://github.com/Olcaytp/Technigo-week8-project-redux-quiz"
+              demoLink="https://technigo-react-redux-quizz-app.netlify.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={movie}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Movie App"
+              description="The Movie Explorer App is a web application built using React, designed to provide users with an immersive and user-friendly platform for discovering and exploring a vast collection of movies. The app leverages the power of React components, state management, and external APIs to deliver a seamless and dynamic user experience."
+              ghLink="https://github.com/Olcaytp/technigo-week7-project-movies-vite"
+              demoLink="https://olcay-movie-site.netlify.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={project}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="Happy Thoughts"
+              description="Happy Thoughts is a Twitter-like social media app that allows users to post and like messages. The app was built using React and the API was built using Express and MongoDB."
+              ghLink="https://github.com/Olcaytp/project-happy-thoughts-vite-technigo-week6"
+              demoLink="https://happy-thoughts-olcay-preeti.netlify.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={Survey}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="Survey"
+              description="Survey is a web app that allows users to create and answer surveys. The app was built using React and the API was built using Express and MongoDB."
+              ghLink="https://github.com/Olcaytp/Project-Survey-Vite-Technigo-Week5"
+              demoLink="https://preeti-olcay-survey-technigo.netlify.app/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Music}
+              isBlog={false}
+              title="Music Releases"
+              description="Music Releases is a web app that allows users to browse new music releases. The app was built using React and the API was built using Express and MongoDB."
+              ghLink="https://github.com/Olcaytp/PairProject-Music-Releases-Technigo-Week4"
+              demoLink="https://music-releases-vite.netlify.app"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={weather}
+              isBlog={false}
+              title="Weather App"
+              description="Weather App is a web app that allows users to search for weather information. The app was built using React and the API was built using Express and MongoDB."
+              ghLink="https://github.com/Olcaytp/PairProject-WeatherApp-Technigo-Week3"
+              demoLink="https://weather-app-ayumi-olcay.netlify.app/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={ASPNet}
+              isBlog={false}
+              title="ASP.NET CRUD"
+              description="This Projects contains the source code for an application developed as part of BTK Academy's ASP.NET Core MVC Training. This training series provides essential knowledge and practical experience for those looking to learn ASP.NET Core MVC."
+              ghLink="https://github.com/Olcaytp/ASP.NET-Core-MVC-BTKAKADEMI"
+              demoLink=""
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Apartment}
+              isBlog={false}
+              title="Apartment Management System"
+              description="The Angular Apartment Management System is an advanced thesis project that leverages the power of the Angular framework to create a comprehensive system for managing apartment complexes. This project is designed to showcase the capabilities of Angular in building robust and scalable applications."
+              ghLink="https://github.com/Olcaytp/AYS-angular-apartment-management-system-thesis-project/"
+              demoLink=""
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Recipe}
+              isBlog={false}
+              title="Recipe Book"
+              description="This Udemy course serves as a foundational starting point for those eager to learn the Angular framework. The course provides participants with an interactive experience through a project that progresses, allowing them to grasp the fundamental concepts of Angular."
+              ghLink="https://github.com/Olcaytp/AngularUdemyAssignments/tree/main/BasicCourseProject/"
+              demoLink=""
             />
           </Col>
         </Row>

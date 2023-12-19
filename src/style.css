@@ -307,14 +307,22 @@ button:focus {
 
 .myAvtar {
   justify-content: center !important;
-  padding-top: 9em !important;
+  padding-top: 5em !important;
+  border-radius: 50% !important;
 }
 
 @media (max-width: 767px) {
   .myAvtar {
     padding-top: 2em !important;
     padding-bottom: 2em !important;
+    border-radius: 50% !important;
   }
+}
+
+.img-fluid {
+  border-radius: 50% !important;
+  border: 5px solid #c770f0 !important;
+  box-shadow: 0 0 0 5px #c770f0 !important;
 }
 
 .home-about-section {
@@ -404,8 +412,6 @@ button:focus {
 .footer {
   background-color: rgb(10, 4, 22);
   bottom: 0 !important;
-  padding-top: 10px !important;
-  padding-bottom: 8px !important ;
 }
 .footer-copywright {
   text-align: center !important;
@@ -466,6 +472,7 @@ button:focus {
   opacity: 0.9 !important;
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
+  justify-content: space-between;
 }
 .project-card-view:hover {
   transform: scale(1.02) !important;
