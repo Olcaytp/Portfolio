@@ -7,18 +7,14 @@ function AboutCard() {
     <Card className="quote-card-view">
       <Card.Body>
         <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Olcay Tapan </span>
-            from <span className="purple"> Gothenburg, Sweden.</span>
-            <br />
-            I am currently employed as a software developer at Acumant for jobbsprånget program.
-            <br />
-            I studied English at Anadolu University for 1 year and after that completed the Civil Engineering bachelor's degree in 100% English.<br />
-            I completed the Ahmet Yesevi University Computer Engineering bachelor's degree in 2023.
-            <br />
-            <br />
-            Apart from coding, some other activities that I love to do!
-          </p>
+        <ul>
+          <li className="about-activity">Hi Everyone, I am <span className="purple">Olcay Tapan</span> from <span className="purple">Gothenburg, Sweden</span>.</li>
+          <br />
+          <li className="about-activity"><ImPointRight /> I have recently completed the Acumant internship program and am now attending the Lexicon System Developer Education program.</li><br />
+          <li className="about-activity"><ImPointRight /> Previously, I studied English at Anadolu University for 1 year and completed my Civil Engineering bachelor's degree entirely in English.</li><br />
+          <li className="about-activity"><ImPointRight /> I also completed the Ahmet Yesevi University Computer Engineering bachelor's degree in 2023.</li><br />
+          <li className="about-activity"> Apart from coding, there are many other activities that I love to do!</li>
+        </ul>
           <ul>
             <li className="about-activity">
               <ImPointRight /> Walking in the Nature
