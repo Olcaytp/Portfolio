@@ -13,6 +13,9 @@ import weather from "../../Assets/Projects/weather.png";
 import ASPNet from "../../Assets/Projects/ASPNet-crud.jpg";
 import Apartment from "../../Assets/Projects/Apartment-Management-System.png";
 import Recipe from "../../Assets/Projects/Recipe-Book.png";
+import Flask from "../../Assets/Projects/python-flask.png";
+import Book from "../../Assets/Projects/python-book.png";
+import Zoo from "../../Assets/Projects/python-zoo.png";
 
 function Projects() {
   return (
@@ -26,6 +29,38 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Flask}
+              isBlog={false}
+              title="Python-Flask-Web-App"
+              description="This project is a Flask web application that incorporates various features such as routing, form handling, file upload functionality, API endpoints, and styling using Bootstrap."
+              ghLink="https://github.com/Olcaytp/Flask-Python-Web-App/tree/main"
+              demoLink="https://github.com/Olcaytp/Flask-Python-Web-App/blob/main/assets/2.png"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Book}
+              isBlog={false}
+              title="Python-MongoDB-Bookstore Application"
+              description="Welcome to the Console-Based Bookstore Application! This application allows users to manage a collection of books through a simple command-line interface."
+              ghLink="https://github.com/Olcaytp/Python-MongoDB"
+              demoLink="https://github.com/Olcaytp/Python-MongoDB/blob/main/assets/3.png"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Zoo}
+              isBlog={false}
+              title="Python-Zoo Simulation Project"
+              description="This project is a simulation of a zoo environment where various animals interact with each other and with visitors. The goal of the project is to create a dynamic environment where animals can eat, sleep, and interact with each other and the park's visitors."
+              ghLink="https://github.com/Olcaytp/Python-zooProject"
+              demoLink="https://github.com/Olcaytp/Python-zooProject/blob/main/assets/1.png/"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={final}
