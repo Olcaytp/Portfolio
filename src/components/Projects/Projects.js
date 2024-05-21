@@ -16,6 +16,7 @@ import Recipe from "../../Assets/Projects/Recipe-Book.png";
 import Flask from "../../Assets/Projects/python-flask.png";
 import Book from "../../Assets/Projects/python-book.png";
 import Zoo from "../../Assets/Projects/python-zoo.png";
+import Django from "../../Assets/Projects/django-book.png";
 
 function Projects() {
   return (
@@ -29,6 +30,17 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Django}
+              isBlog={false}
+              title="Django-SQlite-BookStore-Management-Project"
+              description="Welcome to the BookStore project! This project is a web application built with Django, designed to provide a comprehensive platform for managing a bookstore. Users can browse, review, and purchase books, as well as manage their shopping carts."
+              ghLink="https://github.com/Olcaytp/Django-Bookstore-Project/tree/main"
+              demoLink="https://github.com/Olcaytp/Django-Bookstore-Project/blob/main/assets/home-2.png"
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={Flask}
