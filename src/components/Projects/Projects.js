@@ -17,6 +17,7 @@ import Flask from "../../Assets/Projects/python-flask.png";
 import Book from "../../Assets/Projects/python-book.png";
 import Zoo from "../../Assets/Projects/python-zoo.png";
 import Django from "../../Assets/Projects/django-book.png";
+import Platform from "../../Assets/Projects/olp.png";
 
 function Projects() {
   return (
@@ -30,6 +31,16 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Platform}
+              isBlog={false}
+              title="Django-SQlite-Online-Learning-Platform"
+              description="The objective of this project is to develop an innovative online learning platform that offers a wide range of courses across different domains, catering to the diverse learning needs of users. Inspired by popular platforms like Udemy and Pluralsight, the platform provides users with access to comprehensive course content."
+              ghLink="https://github.com/Olcaytp/OnlineLearningPlatform/tree/main"
+              demoLink="https://github.com/Olcaytp/OnlineLearningPlatform/blob/main/assets/homepage.png"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={Django}
