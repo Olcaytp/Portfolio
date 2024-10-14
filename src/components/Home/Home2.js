@@ -23,7 +23,7 @@ function Home2() {
               <br />
               <br />I am fluent in programming languages like
               <i>
-                <b className="purple"> Javascript/TypeScript</b> and <b className="purple">Python </b> also familiar with  <b className="purple">C# and C++. </b>
+                <b className="purple"> Javascript/TypeScript</b> 
               </i>
               <br />
               <br />
@@ -43,7 +43,7 @@ function Home2() {
               </i>
               &nbsp; like
               <i>
-                <b className="purple"> React.js and Angular</b>
+                <b className="purple"> React</b>
               </i>
             </p>
           </Col>
