@@ -31,7 +31,7 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          {/* <Col md={4} className="project-card">
+          <Col md={4} className="project-card">
             <ProjectCard
               imgPath={Platform}
               isBlog={false}
@@ -84,7 +84,7 @@ function Projects() {
               ghLink="https://github.com/Olcaytp/Python-zooProject"
               demoLink="https://github.com/Olcaytp/Python-zooProject/blob/main/assets/1.png/"
             />
-          </Col> */}
+          </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
